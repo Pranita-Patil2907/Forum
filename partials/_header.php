@@ -14,7 +14,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.php">Home <span class="sr-only"></span></a>
       </li>
     <!-- ------------------ -->
       <li class="nav-item">
@@ -41,7 +41,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="contact.php">Contact</a>
+        <a class="nav-link" href="contact2.php">Contact</a>
       </li>
     </ul>
 
@@ -54,10 +54,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           <p class = "my-0 mx-2 text-light"> Welcome '. $_SESSION['username'].' </p>
            <a href = "partials/_logOut.php" class = "btn btn-outline-success "> LogOut </a>
-
-          </form>
-          ';
-
+          </form> ';
         }
         else{
           echo '  <form class="form-inline my-2 my-lg-0" method= "get" action="search.php">
@@ -65,8 +62,7 @@ echo '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> 
           </form>
           <div class="btn btn-success ml-2" data-toggle="modal" data-target="#loginModal">LogIn</div>
-          <div class="btn btn-success mx-2" data-toggle="modal" data-target="#signupModal">SignUp</div>
-          ';
+          <div class="btn btn-success mx-2" data-toggle="modal" data-target="#signupModal">SignUp</div>';
         }
        
        echo '</div>
